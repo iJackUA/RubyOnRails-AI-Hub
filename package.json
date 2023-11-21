@@ -4,8 +4,10 @@
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
     "@hotwired/turbo-rails": "^7.3.0",
+    "@rails/request.js": "^0.0.9",
     "autoprefixer": "^10.4.16",
     "esbuild": "^0.19.6",
+    "polaris-view-components": "^1.3.0",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5"
   },

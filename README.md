@@ -1,24 +1,12 @@
-# README
+# Ruby on Rails AI Hub
+> Experimental Rails app using AI and LLM services
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## First run
 
-Things you may want to cover:
+- `./bin/setup`
+- `overmind s -f Procfile.dev` - run [Overmind](https://github.com/DarthSim/overmind) (more advanced and stable than gem `foreman`)
 
-* Ruby version
+## UI
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Using ViewComponents lib https://github.com/baoagency/polaris_view_components/
+- Preview Storybook with existing components https://polarisviewcomponents.org/

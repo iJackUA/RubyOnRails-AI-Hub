@@ -23,5 +23,15 @@ module AiHub
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    config.generators do |g|
+      g.orm :active_record
+      g.template_engine :erb
+      g.test_framework :rspec, controller_specs: false, routing_specs: false, view_specs: false
+      g.fixture_replacement :factory_bot
+      g.stylesheets false
+      g.javascripts false
+      g.helper false
+    end
   end
 end

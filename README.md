@@ -11,7 +11,7 @@ Prerequisite: Docker and Docker Compose installed on the host machine.
 * `docker-compose up`
 * `docker-compose run --rm runner ./bin/setup`
 
-## Run with VSCode Remote Container
+## Run with VSCode Remote Container (recommended way)
 
 Prerequisite: Docker and Docker Compose installed on the host machine
 It is recommended to use [VSCode](https://code.visualstudio.com/) with [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
@@ -24,15 +24,16 @@ It is recommended to use [VSCode](https://code.visualstudio.com/) with [Remote -
 * Run setup script: `./bin/setup`
 * Run `overmind s`. Or start Rails app using one of the way described in "Run in Local Dev Mode" (`OVERMIND_PROCFILE` specified in container ENV, so no need to specify `-f Procfile.dev` explicitly)
 
-## Run
+## Run on dev machine without any of these fancy containers...
 
 * Setup PostgreSQL + pg_vector extension
+* Anyway take a look in docker-compose.yml to see are there other dependencies you need to have :)
 * Clone `.env` file from `.env.example`, check it has has correct ENV and secrets values
 * `./bin/setup`
 * `overmind s -f Procfile.dev` - run [Overmind](https://github.com/DarthSim/overmind) (more advanced and stable than gem `foreman`)
 * or using more "classic" gem Foreman `gem install foreman` + `foreman start -f Procfile.dev`
 
-## UI
+## UI ideas
 
 * Using ViewComponents lib https://github.com/baoagency/polaris_view_components/
 * Preview Storybook with existing components https://polarisviewcomponents.org/

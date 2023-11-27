@@ -74,5 +74,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "polaris_view_components", "~> 1.3"
+# gem "polaris_view_components", "~> 1.3"
+gem "polaris_view_components", git: 'git@github.com:baoagency/polaris_view_components.git', branch: 'fix-autoloading-rails-7-1'
 

@@ -30,6 +30,7 @@ services:
     environment:
       OVERMIND_PROCFILE: Procfile.dev
       OVERMIND_SOCKET: /root/.overmind.socket
+      OVERMIND_NO_PORT: 1
       PROMPT_COMMAND: history -a
       HISTFILE: /app/log/.bash_history
       HISTSIZE: 1000

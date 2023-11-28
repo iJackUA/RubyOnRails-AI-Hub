@@ -45,14 +45,15 @@
         "solargraph.formatting": true
       },
       "extensions": [
-        "editorconfig.editorconfig",
-        "castwide.solargraph",
-        "rebornix.ruby",
-        "vortizhe.simple-ruby-erb",
-        "pavlitsky.yard",
-        "redhat.vscode-yaml",
-        "dbaeumer.vscode-eslint"
-      ]
+		"editorconfig.editorconfig",
+		"castwide.solargraph",
+		"Shopify.ruby-lsp",
+		"vortizhe.simple-ruby-erb",
+		"pavlitsky.yard",
+		"redhat.vscode-yaml",
+		"dbaeumer.vscode-eslint",
+		"Codeium.codeium"
+	]
     }
   }
 

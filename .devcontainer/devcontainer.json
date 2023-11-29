@@ -39,7 +39,7 @@
         "terminal.integrated.shellIntegration.enabled": false,
         "terminal.integrated.defaultProfile.linux": "zsh",
         "files.associations": {
-          "*.erb": "html"
+          "*.erb": "erb"
         },
         "solargraph.useBundler": true,
         "solargraph.formatting": true

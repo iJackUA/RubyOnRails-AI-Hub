@@ -65,6 +65,8 @@ group :development do
   gem "binding_of_caller", "~> 1.0"
   gem "solargraph", require: false
   gem "solargraph-rails", require: false
+
+  gem "ruby-lsp-rails"
 end
 
 group :test do
@@ -77,3 +79,8 @@ end
 # gem "polaris_view_components", "~> 1.3"
 gem "polaris_view_components", git: 'git@github.com:baoagency/polaris_view_components.git', branch: 'fix-autoloading-rails-7-1'
 
+gem "langchainrb", "~> 0.7.5"
+
+gem "langchainrb_rails", "~> 0.1.4"
+
+gem "hugging-face", "~> 0.3.4"

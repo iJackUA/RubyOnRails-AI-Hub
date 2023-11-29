@@ -1,0 +1,5 @@
+<%= turbo_stream.replace("generated_suggestions") do %>
+  <% if @response %>
+    <p>Response: <%= @response %></p>
+  <% end %>
+<% end %>

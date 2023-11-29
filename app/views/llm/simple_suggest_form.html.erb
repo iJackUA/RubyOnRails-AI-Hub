@@ -1,5 +1,6 @@
-<%= form_with url: simple_suggest_generate_path, method: :post do |form| %>
-  <%= polaris_button(submit: true) { "Generate text with LLM" } %>
+<%= form_with url: simple_suggest_generate_path, method: :post, builder: Polaris::FormBuilder do |form| %>
+  <%= form.polaris_text_field(:prompt) %>
+  <%= polaris_button(submit: true) { "Send prompt to LLM" } %>
 
   <%= turbo_frame_tag "generated_suggestions" do %>
   <% end %>

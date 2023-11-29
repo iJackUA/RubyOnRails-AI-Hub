@@ -1,3 +1,4 @@
+# Monkey-paths LangchainRb classes to support `completion` methods
 class HuggingFaceLLM < Langchain::LLM::HuggingFace
   alias original_initialize initialize
   def initialize(api_key:, default_options: {})
@@ -21,6 +22,19 @@ class HuggingFaceLLM < Langchain::LLM::HuggingFace
     Langchain::LLM::HuggingFaceResponse.new(response, model: @defaults[:text_generation_model])
   end
 end
+
+module Langchain::LLM
+  class HuggingFaceResponse < BaseResponse
+    def completions
+      [raw_response&.dig(0, "generated_text")]
+    end
+
+    def completion
+      completions.first
+    end
+  end
+end
+
 
 LC_LLM_HUGGING_FACE = HuggingFaceLLM.new(
   api_key: ENV['HUGGINGFACE_API_TOKEN'],

@@ -52,7 +52,8 @@
 		"pavlitsky.yard",
 		"redhat.vscode-yaml",
 		"dbaeumer.vscode-eslint",
-		"Codeium.codeium"
+		"Codeium.codeium",
+		"KoichiSasada.vscode-rdbg"
 	]
     }
   }

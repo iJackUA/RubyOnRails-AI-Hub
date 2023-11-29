@@ -1,5 +1,5 @@
-<%= turbo_stream.replace("generated_suggestions") do %>
+<%= turbo_stream.update("generated_suggestions") do %>
   <% if @response %>
-    <p>Response: <%= @response %></p>
+    <p>Response: <%= @response.completion %></p>
   <% end %>
 <% end %>
